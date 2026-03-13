@@ -8,7 +8,7 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className={styles.heroOverlay}></div>
+        <div className={styles.heroBackground}></div>
         <div className={`container ${styles.heroContent}`}>
           <h1 className={styles.heroTitle}>PADHMI</h1>
           <p className={styles.heroSubtitle}>A celebration of Indian artistry curated for you.</p>
@@ -24,10 +24,10 @@ export default function Home() {
         <h2 className={styles.sectionTitle}>Explore Our Collections</h2>
         <div className={styles.categoryGrid}>
           {[
-            { name: 'Women', image: '/images/category-women.jpg', link: '/shop?category=women' },
-            { name: 'Vrushaahi', image: '/images/category-bridal.jpg', link: '/vrushaahi' },
-            { name: 'Kids', image: '/images/category-kids.jpg', link: '/shop?category=kids' },
-            { name: 'Men', image: '/images/category-men.jpg', link: '/shop?category=men' },
+            { name: 'Women', image: '/images/category-women.png', link: '/shop?category=women' },
+            { name: 'Vrushaahi', image: '/images/category-bridal.png', link: '/vrushaahi' },
+            { name: 'Kids', image: '/images/category-kids.png', link: '/shop?category=kids' },
+            { name: 'Men', image: '/images/category-men.png', link: '/shop?category=men' },
           ].map((cat) => (
             <Link href={cat.link} key={cat.name} className={styles.categoryCard}>
               <div className={styles.categoryImageWrapper}>
@@ -46,7 +46,7 @@ export default function Home() {
         <div className={`container ${styles.storySplit}`}>
           <div className={styles.storyImageWrapper}>
             <Image 
-              src="/images/brand-story.jpg" 
+              src="/images/brand-story.png" 
               alt="Indian Artisan Handloom" 
               fill 
               className={styles.storyImg} 

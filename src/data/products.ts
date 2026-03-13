@@ -19,7 +19,7 @@ export const products: Product[] = [
     price: 350.00,
     category: 'women',
     subCategory: 'Silk Sarees',
-    image: '/images/product-kanchipuram.jpg',
+    image: '/images/product-kanchipuram.png',
     badges: ['Best Seller'],
     inStock: true
   },
@@ -30,7 +30,7 @@ export const products: Product[] = [
     price: 850.00,
     category: 'vrushaahi',
     subCategory: 'Bridal Sarees',
-    image: '/images/category-bridal.jpg',
+    image: '/images/category-bridal.png',
     badges: ['Vrushaahi Wedding Collection', 'Limited Edition'],
     inStock: true
   },
@@ -41,7 +41,7 @@ export const products: Product[] = [
     price: 120.00,
     category: 'women',
     subCategory: 'Jewelry',
-    image: '/images/product-necklace.jpg',
+    image: '/images/product-necklace.png',
     badges: ['New Arrival'],
     inStock: true
   },
@@ -52,7 +52,7 @@ export const products: Product[] = [
     price: 85.00,
     category: 'men',
     subCategory: 'Apparel',
-    image: '/images/category-men.jpg',
+    image: '/images/category-men.png',
     inStock: true
   },
   {
@@ -62,7 +62,7 @@ export const products: Product[] = [
     price: 65.00,
     category: 'kids',
     subCategory: 'Apparel',
-    image: '/images/category-kids.jpg',
+    image: '/images/category-kids.png',
     badges: ['Kids Festive Collection'],
     inStock: true
   },
@@ -73,7 +73,7 @@ export const products: Product[] = [
     price: 45.00,
     category: 'decor',
     subCategory: 'Home Decor',
-    image: '/images/product-diya.jpg',
+    image: '/images/product-diya.png',
     badges: ['Supporting Artisans'],
     inStock: true
   },
@@ -84,7 +84,7 @@ export const products: Product[] = [
     price: 85.00,
     category: 'women',
     subCategory: 'Cotton Sarees',
-    image: '/images/category-women.jpg',
+    image: '/images/category-women.png',
     inStock: true
   },
   {
@@ -94,7 +94,7 @@ export const products: Product[] = [
     price: 250.00,
     category: 'vrushaahi',
     subCategory: 'Bridal Jewelry',
-    image: '/images/product-necklace.jpg',
+    image: '/images/product-necklace.png',
     badges: ['Vrushaahi Wedding Collection'],
     inStock: false
   }

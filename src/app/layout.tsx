@@ -1,21 +1,24 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, DM_Sans, Cormorant_Garamond } from 'next/font/google';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 import './globals.css';
 
-const playfair = Playfair_Display({ 
-  subsets: ['latin'], 
-  variable: '--font-playfair' 
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair'
 });
 
-const dmSans = DM_Sans({ 
-  subsets: ['latin'], 
-  variable: '--font-dm-sans' 
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-dm-sans'
 });
 
-const cormorant = Cormorant_Garamond({ 
-  subsets: ['latin'], 
-  weight: ['400', '400italic'], 
-  variable: '--font-cormorant' 
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-cormorant'
 });
 
 export const metadata: Metadata = {
@@ -31,9 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${playfair.variable} ${dmSans.variable} ${cormorant.variable} ${dmSans.className}`}>
-        {/* Placeholder for future Global Header */}
+        <Header />
         <main>{children}</main>
-        {/* Placeholder for future Global Footer */}
+        <Footer />
 
         {/* Snipcart Setup - Hidden div for the checkout modal */}
         <div hidden id="snipcart" data-api-key="Y2JiNTYwZjAtZmEyMi00MzY2LWI4ZDMtMTBhNzBhNmIyMWM4NjM4NDMzNDY3Nzk5ODAxMzM2"></div>

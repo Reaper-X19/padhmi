@@ -1,0 +1,62 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  border-radius: var(--pill-radius);
+  font-family: var(--font-dm-sans), sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+.primary {
+  background-color: var(--color-burnished-bronze);
+  color: var(--color-deep-ivory);
+}
+
+.primary:hover {
+  background-color: #a3760a;
+}
+
+.secondary {
+  background-color: transparent;
+  color: var(--color-warm-graphite);
+  border-color: var(--color-warm-graphite);
+}
+
+.secondary:hover {
+  background-color: var(--color-warm-graphite);
+  color: var(--color-deep-ivory);
+}
+
+.ghost {
+  background-color: transparent;
+  color: var(--color-burnished-bronze);
+  border-color: var(--color-burnished-bronze);
+}
+
+.ghost:hover {
+  background-color: rgba(184, 134, 11, 0.05);
+}
+
+.bridal {
+  background-color: var(--color-bridal-maroon);
+  color: var(--color-deep-ivory);
+}
+
+.bridal:hover {
+  background-color: #622323;
+}

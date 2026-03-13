@@ -20,26 +20,32 @@
 }
 
 .logoLink {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 24px;
+  background-color: #ffffff;
+  padding: 12px 20px;
+  border-radius: var(--pill-radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logoLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  opacity: 1; /* Override default a:hover */
 }
 
 .logoImgWrapper {
   position: relative;
-  width: 180px;
-  height: 60px;
+  width: 150px;
+  height: 46px;
 }
 
 .logoImg {
   object-fit: contain;
-  /* Since the logo is a JPEG with a white background:
-     1. invert(1) turns white bg into black bg, and blue logo into yellow
-     2. grayscale(1) turns yellow logo into light gray
-     3. brightness(2) turns light gray logo into white
-     4. mix-blend-mode: screen drops the black background, leaving only the white logo! */
-  filter: invert(1) grayscale(1) brightness(2);
-  mix-blend-mode: screen;
-  opacity: 0.9;
+  /* Zero filters. Native JPEG rendering inside a clean white badge. */
 }
 
 .brandCol .tagline {

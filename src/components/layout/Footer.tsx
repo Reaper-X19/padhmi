@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -6,7 +7,16 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.footerGrid}`}>
         <div className={styles.brandCol}>
-          <h2 className={styles.logo}>PADHMI</h2>
+          <Link href="/" className={styles.logoLink}>
+            <div className={styles.logoImgWrapper}>
+              <Image 
+                src="/images/padhmi-logo.jpeg" 
+                alt="Padhmi Secondary Logo" 
+                fill
+                className={styles.logoImg}
+              />
+            </div>
+          </Link>
           <p className={styles.tagline}>A celebration of Indian artistry curated for you.</p>
         </div>
         

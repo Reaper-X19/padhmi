@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -7,7 +8,14 @@ export default function Header() {
       <div className={`container ${styles.headerInner}`}>
         <div className={styles.logo}>
           <Link href="/">
-            PADHMI
+            <Image 
+              src="/images/padhmi-logo.jpeg" 
+              alt="Padhmi Logo" 
+              width={160} 
+              height={40} 
+              className={styles.logoImg}
+              priority
+            />
           </Link>
         </div>
         

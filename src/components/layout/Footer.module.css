@@ -19,13 +19,22 @@
   }
 }
 
-.brandCol .logo {
-  font-family: var(--font-cormorant), serif;
-  font-size: 2.5rem;
-  letter-spacing: 4px;
-  color: var(--color-burnished-bronze);
-  margin-bottom: 16px;
-  text-transform: uppercase;
+.logoLink {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.logoImgWrapper {
+  position: relative;
+  width: 180px;
+  height: 60px;
+}
+
+.logoImg {
+  object-fit: contain;
+  /* Footer has a dark background, the jpeg logo might have a white background. 
+     Using mix-blend-mode to try and help, or a filter if it's black text on white bg */
+  filter: invert(1) brightness(2); 
 }
 
 .brandCol .tagline {

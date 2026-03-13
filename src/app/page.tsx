@@ -1,66 +1,81 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image';
+import Link from 'next/link';
+import Button from '@/components/ui/Button';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      {/* Hero Section */}
+      <section className={styles.hero}>
+        <div className={styles.heroOverlay}></div>
+        <div className={`container ${styles.heroContent}`}>
+          <h1 className={styles.heroTitle}>PADHMI</h1>
+          <p className={styles.heroSubtitle}>A celebration of Indian artistry curated for you.</p>
+          <div className={styles.heroActions}>
+            <Button href="/shop">Shop Now</Button>
+            <Button href="/vrushaahi" variant="ghost">Vrushaahi Bridal</Button>
+          </div>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+      </section>
+
+      {/* Shop by Category */}
+      <section className={`section container ${styles.categoriesSection}`}>
+        <h2 className={styles.sectionTitle}>Explore Our Collections</h2>
+        <div className={styles.categoryGrid}>
+          {[
+            { name: 'Women', image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800', link: '/shop?category=women' },
+            { name: 'Vrushaahi', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=800', link: '/vrushaahi' },
+            { name: 'Kids', image: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=800', link: '/shop?category=kids' },
+            { name: 'Men', image: 'https://images.unsplash.com/photo-1559582798-678dfc71cee4?auto=format&fit=crop&q=80&w=800', link: '/shop?category=men' },
+          ].map((cat) => (
+            <Link href={cat.link} key={cat.name} className={styles.categoryCard}>
+              <div className={styles.categoryImageWrapper}>
+                <Image src={cat.image} alt={cat.name} fill className={styles.categoryImg} />
+                <div className={styles.categoryOverlay}>
+                  <h3>{cat.name}</h3>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Brand Story Split Section */}
+      <section className={styles.storySection}>
+        <div className={`container ${styles.storySplit}`}>
+          <div className={styles.storyImageWrapper}>
+            <Image 
+              src="https://images.unsplash.com/photo-1605908502724-9060c196154f?auto=format&fit=crop&q=80&w=1000" 
+              alt="Indian Artisan Handloom" 
+              fill 
+              className={styles.storyImg} 
             />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
+          <div className={styles.storyContent}>
+            <h2>Our Story</h2>
+            <p>
+              Padhmi was born from a deep respect for the hands that weave India's cultural fabric. 
+              We travel directly to artisan clusters across the country to bring you authentic, 
+              handcrafted pieces that carry generations of skill.
+            </p>
+            <p>
+              By choosing Padhmi, you are not just purchasing a product; you are empowering the 
+              artisan community and helping preserve our magnificent heritage.
+            </p>
+            <Button href="/about" variant="secondary">Read Our Story</Button>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Vrushaahi Bridal Highlight */}
+      <section className={styles.bridalHighlight}>
+        <div className={`container ${styles.bridalContent}`}>
+          <h2 className={styles.bridalTitle}>Vrushaahi Wedding Collection</h2>
+          <p className={styles.bridalSubtitle}>Handcrafted for the most important day of your life.</p>
+          <Button href="/vrushaahi" variant="bridal">Explore Vrushaahi</Button>
+        </div>
+      </section>
+    </>
   );
 }

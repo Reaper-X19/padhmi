@@ -33,7 +33,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.imageContent}>
             <Image 
-              src="https://images.unsplash.com/photo-1605908502724-9060c196154f?auto=format&fit=crop&q=80&w=800"
+              src="/images/brand-story.jpg"
               alt="Artisan at work"
               width={600}
               height={800}

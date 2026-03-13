@@ -24,10 +24,10 @@ export default function Home() {
         <h2 className={styles.sectionTitle}>Explore Our Collections</h2>
         <div className={styles.categoryGrid}>
           {[
-            { name: 'Women', image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800', link: '/shop?category=women' },
-            { name: 'Vrushaahi', image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=800', link: '/vrushaahi' },
-            { name: 'Kids', image: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=800', link: '/shop?category=kids' },
-            { name: 'Men', image: 'https://images.unsplash.com/photo-1559582798-678dfc71cee4?auto=format&fit=crop&q=80&w=800', link: '/shop?category=men' },
+            { name: 'Women', image: '/images/category-women.jpg', link: '/shop?category=women' },
+            { name: 'Vrushaahi', image: '/images/category-bridal.jpg', link: '/vrushaahi' },
+            { name: 'Kids', image: '/images/category-kids.jpg', link: '/shop?category=kids' },
+            { name: 'Men', image: '/images/category-men.jpg', link: '/shop?category=men' },
           ].map((cat) => (
             <Link href={cat.link} key={cat.name} className={styles.categoryCard}>
               <div className={styles.categoryImageWrapper}>
@@ -46,7 +46,7 @@ export default function Home() {
         <div className={`container ${styles.storySplit}`}>
           <div className={styles.storyImageWrapper}>
             <Image 
-              src="https://images.unsplash.com/photo-1605908502724-9060c196154f?auto=format&fit=crop&q=80&w=1000" 
+              src="/images/brand-story.jpg" 
               alt="Indian Artisan Handloom" 
               fill 
               className={styles.storyImg} 

@@ -19,7 +19,7 @@ export const products: Product[] = [
     price: 350.00,
     category: 'women',
     subCategory: 'Silk Sarees',
-    image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-kanchipuram.jpg',
     badges: ['Best Seller'],
     inStock: true
   },
@@ -30,7 +30,7 @@ export const products: Product[] = [
     price: 850.00,
     category: 'vrushaahi',
     subCategory: 'Bridal Sarees',
-    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=800',
+    image: '/images/category-bridal.jpg',
     badges: ['Vrushaahi Wedding Collection', 'Limited Edition'],
     inStock: true
   },
@@ -41,7 +41,7 @@ export const products: Product[] = [
     price: 120.00,
     category: 'women',
     subCategory: 'Jewelry',
-    image: 'https://images.unsplash.com/photo-1599643478524-fb66fa5320e5?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-necklace.jpg',
     badges: ['New Arrival'],
     inStock: true
   },
@@ -52,7 +52,7 @@ export const products: Product[] = [
     price: 85.00,
     category: 'men',
     subCategory: 'Apparel',
-    image: 'https://images.unsplash.com/photo-1598911540307-e837fbf97274?auto=format&fit=crop&q=80&w=800',
+    image: '/images/category-men.jpg',
     inStock: true
   },
   {
@@ -62,7 +62,7 @@ export const products: Product[] = [
     price: 65.00,
     category: 'kids',
     subCategory: 'Apparel',
-    image: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=800',
+    image: '/images/category-kids.jpg',
     badges: ['Kids Festive Collection'],
     inStock: true
   },
@@ -73,7 +73,7 @@ export const products: Product[] = [
     price: 45.00,
     category: 'decor',
     subCategory: 'Home Decor',
-    image: 'https://images.unsplash.com/photo-1601614769018-8f85f34bd851?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-diya.jpg',
     badges: ['Supporting Artisans'],
     inStock: true
   },
@@ -84,7 +84,7 @@ export const products: Product[] = [
     price: 85.00,
     category: 'women',
     subCategory: 'Cotton Sarees',
-    image: 'https://images.unsplash.com/photo-1583391733958-d15f1108ce8a?auto=format&fit=crop&q=80&w=800',
+    image: '/images/category-women.jpg',
     inStock: true
   },
   {
@@ -94,7 +94,7 @@ export const products: Product[] = [
     price: 250.00,
     category: 'vrushaahi',
     subCategory: 'Bridal Jewelry',
-    image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=800',
+    image: '/images/product-necklace.jpg',
     badges: ['Vrushaahi Wedding Collection'],
     inStock: false
   }

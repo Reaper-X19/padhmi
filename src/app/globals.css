@@ -14,13 +14,12 @@
   --color-warm-graphite: #4A4A4A;
   --color-bridal-pink: #D67A8F;
   --color-bridal-maroon: #7A2E2E;
-  
   /* Layout & Spacing */
   --max-width: 1280px;
   --page-padding: 2rem;
   --section-padding: 80px;
-  --border-radius: 12px;
-  --pill-radius: 50px;
+  --border-radius: 2px; /* Sharper geometric luxury edges */
+  --pill-radius: 4px; /* Subtle instead of full pill */
 }
 
 /* Base Reset */
@@ -35,6 +34,8 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   background-color: var(--color-deep-ivory);
+  background-image: radial-gradient(rgba(184, 134, 11, 0.06) 1px, var(--color-deep-ivory) 1px);
+  background-size: 30px 30px; /* Subtle golden dot texture */
   color: var(--color-warm-graphite);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

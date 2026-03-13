@@ -5,7 +5,7 @@ import Button from '@/components/ui/Button';
 import styles from './page.module.css';
 
 interface ProductPageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 // Generate static params for all known products
@@ -16,7 +16,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: ProductPageProps) {
-  const product = getProductById(params.slug);
+  const resolvedParams = await params;
+  const product = getProductById(resolvedParams.slug);
   if (!product) return { title: 'Product Not Found | Padhmi' };
   
   return {
@@ -25,8 +26,9 @@ export async function generateMetadata({ params }: ProductPageProps) {
   };
 }
 
-export default function ProductDetailPage({ params }: ProductPageProps) {
-  const product = getProductById(params.slug);
+export default async function ProductDetailPage({ params }: ProductPageProps) {
+  const resolvedParams = await params;
+  const product = getProductById(resolvedParams.slug);
 
   if (!product) {
     notFound();

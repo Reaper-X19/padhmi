@@ -1,17 +1,22 @@
 .hero {
-  background-color: var(--color-deep-ivory);
+  background-color: transparent;
   padding: 100px 0 60px;
   text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 .breadcrumb {
   font-family: var(--font-dm-sans), sans-serif;
-  color: var(--color-warm-graphite);
-  font-size: 0.9rem;
+  color: rgba(26,26,26,0.6);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   margin-bottom: 24px;
 }
 
 .title {
+  font-family: var(--font-cormorant), serif;
+  font-style: italic;
   font-size: clamp(3rem, 6vw, 4.5rem);
   color: var(--color-charcoal-ink);
   margin-bottom: 16px;
@@ -39,18 +44,22 @@
 }
 
 .pillBtn {
-  background-color: var(--color-muted-sandstone);
-  color: var(--color-warm-graphite);
-  padding: 10px 24px;
+  background-color: transparent;
+  color: rgba(26,26,26,0.7);
+  padding: 8px 20px;
+  border: 1px solid rgba(0,0,0,0.1);
   border-radius: var(--pill-radius);
   font-family: var(--font-dm-sans), sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   transition: all 0.3s ease;
 }
 
 .pillBtn:hover {
-  background-color: var(--color-burnished-bronze);
+  background-color: var(--color-charcoal-ink);
   color: var(--color-deep-ivory);
+  border-color: var(--color-charcoal-ink);
 }
 
 .categoryBlock {
@@ -58,8 +67,9 @@
 }
 
 .categoryTitle {
-  font-family: var(--font-playfair), serif;
-  font-size: 2rem;
+  font-family: var(--font-cormorant), serif;
+  font-style: italic;
+  font-size: 2.5rem;
   color: var(--color-charcoal-ink);
   margin-bottom: 32px;
   padding-bottom: 16px;
@@ -83,7 +93,9 @@
 .questionText {
   font-family: var(--font-dm-sans), sans-serif;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .icon {

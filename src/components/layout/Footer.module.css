@@ -1,5 +1,6 @@
 .footer {
-  background-color: var(--color-muted-sandstone);
+  background-color: var(--color-charcoal-ink);
+  color: var(--color-deep-ivory);
   padding: 80px 0 40px;
   margin-top: auto;
 }
@@ -19,18 +20,19 @@
 }
 
 .brandCol .logo {
-  font-family: var(--font-playfair), serif;
+  font-family: var(--font-cormorant), serif;
   font-size: 2.5rem;
   letter-spacing: 4px;
-  color: var(--color-charcoal-ink);
+  color: var(--color-burnished-bronze);
   margin-bottom: 16px;
+  text-transform: uppercase;
 }
 
 .brandCol .tagline {
   font-family: var(--font-cormorant), serif;
   font-style: italic;
   font-size: 1.25rem;
-  color: var(--color-warm-graphite);
+  color: rgba(250, 246, 240, 0.7);
   max-width: 300px;
 }
 
@@ -39,7 +41,7 @@
   font-family: var(--font-playfair), serif;
   font-size: 1.25rem;
   margin-bottom: 24px;
-  color: var(--color-charcoal-ink);
+  color: var(--color-deep-ivory);
 }
 
 .linksCol ul {
@@ -50,18 +52,18 @@
 
 .linksCol a {
   font-family: var(--font-dm-sans), sans-serif;
-  color: var(--color-warm-graphite);
+  color: rgba(250, 246, 240, 0.7);
   transition: color 0.3s ease;
   font-size: 0.95rem;
 }
 
 .linksCol a:hover {
-  color: var(--color-burnished-bronze);
+  color: var(--color-deep-ivory);
 }
 
 .newsletterCol p {
   font-family: var(--font-dm-sans), sans-serif;
-  color: var(--color-warm-graphite);
+  color: rgba(250, 246, 240, 0.7);
   margin-bottom: 24px;
   font-size: 0.95rem;
   line-height: 1.5;
@@ -75,11 +77,16 @@
 .input {
   flex: 1;
   padding: 12px 16px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(250, 246, 240, 0.2);
   border-radius: var(--pill-radius);
   font-family: var(--font-dm-sans), sans-serif;
-  background-color: var(--color-deep-ivory);
+  background-color: transparent;
+  color: var(--color-deep-ivory);
   outline: none;
+}
+
+.input::placeholder {
+  color: rgba(250, 246, 240, 0.4);
 }
 
 .input:focus {
@@ -87,8 +94,8 @@
 }
 
 .submitBtn {
-  background-color: var(--color-charcoal-ink);
-  color: var(--color-deep-ivory);
+  background-color: var(--color-deep-ivory);
+  color: var(--color-charcoal-ink);
   padding: 12px 24px;
   border-radius: var(--pill-radius);
   font-family: var(--font-dm-sans), sans-serif;
@@ -98,6 +105,7 @@
 
 .submitBtn:hover {
   background-color: var(--color-burnished-bronze);
+  color: var(--color-deep-ivory);
 }
 
 .bottomRow {
@@ -106,7 +114,7 @@
   align-items: center;
   gap: 20px;
   padding-top: 40px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(250, 246, 240, 0.1);
 }
 
 @media (min-width: 768px) {
@@ -118,7 +126,7 @@
 
 .bottomRow p {
   font-family: var(--font-dm-sans), sans-serif;
-  color: var(--color-warm-graphite);
+  color: rgba(250, 246, 240, 0.5);
   font-size: 0.9rem;
 }
 
@@ -129,12 +137,12 @@
 
 .socials a {
   font-family: var(--font-dm-sans), sans-serif;
-  color: var(--color-charcoal-ink);
+  color: rgba(250, 246, 240, 0.7);
   font-weight: 600;
   font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
 .socials a:hover {
-  color: var(--color-burnished-bronze);
+  color: var(--color-deep-ivory);
 }

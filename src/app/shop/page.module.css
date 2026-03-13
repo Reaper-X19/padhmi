@@ -3,16 +3,20 @@
 }
 
 .shopHeader {
-  background-color: var(--color-muted-sandstone);
+  background-color: transparent;
   padding: 80px 0;
   text-align: center;
   margin-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .headerInner h1 {
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-family: var(--font-cormorant), serif;
+  font-style: italic;
+  font-size: clamp(3rem, 6vw, 5rem);
   margin-bottom: 16px;
   color: var(--color-charcoal-ink);
+  letter-spacing: 2px;
 }
 
 .headerInner p {
@@ -60,8 +64,9 @@
 }
 
 .filterTitle {
-  font-family: var(--font-playfair), serif;
-  font-size: 1.5rem;
+  font-family: var(--font-cormorant), serif;
+  font-size: 1.8rem;
+  font-style: italic;
   margin-bottom: 24px;
   color: var(--color-charcoal-ink);
 }
@@ -75,8 +80,10 @@
 .filterBtn {
   text-align: left;
   font-family: var(--font-dm-sans), sans-serif;
-  color: var(--color-warm-graphite);
-  font-size: 1rem;
+  color: rgba(26, 26, 26, 0.7);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
   padding: 8px 0;
   transition: color 0.3s ease;
   position: relative;
@@ -88,7 +95,7 @@
 }
 
 .filterBtn.active {
-  color: var(--color-burnished-bronze);
+  color: var(--color-charcoal-ink);
   font-weight: 600;
 }
 
@@ -101,7 +108,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: var(--color-burnished-bronze);
+  background-color: var(--color-charcoal-ink);
 }
 
 .productArea {
@@ -165,5 +172,5 @@
 }
 
 .resetBtn:hover {
-  background-color: #a3760a;
+  background-color: var(--color-charcoal-ink);
 }

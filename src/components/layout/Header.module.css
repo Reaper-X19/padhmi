@@ -2,11 +2,10 @@
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: rgba(250, 246, 240, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: var(--color-deep-ivory);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   z-index: 100;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .headerInner {
@@ -16,11 +15,12 @@
 }
 
 .logo a {
-  font-family: var(--font-playfair), serif;
-  font-size: 2rem;
+  font-family: var(--font-cormorant), serif;
+  font-size: 2.2rem;
   letter-spacing: 4px;
   color: var(--color-charcoal-ink);
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .nav {
@@ -40,11 +40,12 @@
 
 .navList a {
   font-family: var(--font-dm-sans), sans-serif;
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  color: var(--color-warm-graphite);
-  transition: color 0.3s ease;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-charcoal-ink);
+  transition: opacity 0.3s ease;
   position: relative;
 }
 

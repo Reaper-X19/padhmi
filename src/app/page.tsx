@@ -42,6 +42,7 @@ export default function Home() {
       </section>
 
       {/* Brand Story Split Section */}
+      <div className={`container`}><div className="goldDivider"></div></div>
       <section className={styles.storySection}>
         <div className={`container ${styles.storySplit}`}>
           <div className={styles.storyImageWrapper}>
@@ -69,6 +70,7 @@ export default function Home() {
       </section>
 
       {/* Vrushaahi Bridal Highlight */}
+      <div className={`container`}><div className="goldDivider"></div></div>
       <section className={styles.bridalHighlight}>
         <div className={`container ${styles.bridalContent}`}>
           <h2 className={styles.bridalTitle}>Vrushaahi Wedding Collection</h2>

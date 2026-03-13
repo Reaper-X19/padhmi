@@ -98,7 +98,9 @@
 }
 
 .storyContent h2 {
-  font-size: 3rem;
+  font-family: var(--font-cormorant), serif;
+  font-style: italic;
+  font-size: 3.5rem;
   margin-bottom: 16px;
   color: var(--color-bridal-maroon);
 }
@@ -123,9 +125,12 @@
 }
 
 .sectionTitle {
+  font-family: var(--font-cormorant), serif;
+  font-style: italic;
   text-align: center;
-  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-size: clamp(3rem, 6vw, 4rem);
   margin-bottom: 60px;
+  color: var(--color-charcoal-ink);
 }
 
 .gridContainer {
@@ -171,9 +176,10 @@
 }
 
 .expItem h3 {
-  color: var(--color-burnished-bronze);
-  font-family: var(--font-playfair), serif;
-  font-size: 1.5rem;
+  color: var(--color-deep-ivory);
+  font-family: var(--font-cormorant), serif;
+  font-style: italic;
+  font-size: 2rem;
   margin-bottom: 16px;
 }
 

@@ -1,0 +1,115 @@
+.hero {
+  background-color: var(--color-deep-ivory);
+  padding: 100px 0 60px;
+  text-align: center;
+}
+
+.breadcrumb {
+  font-family: var(--font-dm-sans), sans-serif;
+  color: var(--color-warm-graphite);
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  color: var(--color-charcoal-ink);
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-family: var(--font-cormorant), serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--color-warm-graphite);
+}
+
+.contentSection {
+  padding-bottom: 120px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.pillBtn {
+  background-color: var(--color-muted-sandstone);
+  color: var(--color-warm-graphite);
+  padding: 10px 24px;
+  border-radius: var(--pill-radius);
+  font-family: var(--font-dm-sans), sans-serif;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.pillBtn:hover {
+  background-color: var(--color-burnished-bronze);
+  color: var(--color-deep-ivory);
+}
+
+.categoryBlock {
+  margin-bottom: 80px;
+}
+
+.categoryTitle {
+  font-family: var(--font-playfair), serif;
+  font-size: 2rem;
+  color: var(--color-charcoal-ink);
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.accordionItem {
+  border-bottom: 1px solid rgba(184, 134, 11, 0.2); /* Muted bronze */
+}
+
+.questionBtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  text-align: left;
+  color: var(--color-charcoal-ink);
+}
+
+.questionText {
+  font-family: var(--font-dm-sans), sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: var(--color-burnished-bronze);
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+.answerWrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.answerWrapper.open {
+  grid-template-rows: 1fr;
+}
+
+.answerInner {
+  overflow: hidden;
+}
+
+.answerInner p {
+  padding-bottom: 24px;
+  color: var(--color-warm-graphite);
+  line-height: 1.6;
+  font-size: 1.05rem;
+}

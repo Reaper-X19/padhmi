@@ -30,6 +30,7 @@ export default function VrushaahiPage() {
 
       {/* Story Split */}
       <section id="story" className={styles.storySection}>
+        <div className={styles.ghostText}>VRUSHAAHI</div>
         <div className={`container ${styles.storySplit}`}>
           <div className={styles.storyImageWrapper}>
             <Image 

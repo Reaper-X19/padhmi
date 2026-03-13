@@ -30,11 +30,16 @@ export default function Home() {
             { name: 'Men', image: '/images/category-men.png', link: '/shop?category=men' },
           ].map((cat) => (
             <Link href={cat.link} key={cat.name} className={styles.categoryCard}>
-              <div className={styles.categoryImageWrapper}>
-                <Image src={cat.image} alt={cat.name} fill className={styles.categoryImg} />
-                <div className={styles.categoryOverlay}>
-                  <h3>{cat.name}</h3>
-                </div>
+              <Image 
+                src={cat.image} 
+                alt={cat.name} 
+                width={800} 
+                height={cat.name === 'Women' ? 1000 : cat.name === 'Kids' ? 900 : 1200}
+                className={styles.categoryImg} 
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+              />
+              <div className={styles.categoryOverlay}>
+                <h3>{cat.name}</h3>
               </div>
             </Link>
           ))}
@@ -44,6 +49,7 @@ export default function Home() {
       {/* Brand Story Split Section */}
       <div className={`container`}><div className="goldDivider"></div></div>
       <section className={styles.storySection}>
+        <div className={styles.ghostText}>PADHMI</div>
         <div className={`container ${styles.storySplit}`}>
           <div className={styles.storyImageWrapper}>
             <Image 

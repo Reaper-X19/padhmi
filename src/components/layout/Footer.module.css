@@ -32,9 +32,10 @@
 
 .logoImg {
   object-fit: contain;
-  /* Footer has a dark background, the jpeg logo might have a white background. 
-     Using mix-blend-mode to try and help, or a filter if it's black text on white bg */
-  filter: invert(1) brightness(2); 
+  /* Footer has a dark background. We use brightness(0) to turn it pure black, 
+     then invert(1) to turn it pure white, avoiding weird color artifacts */
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
 }
 
 .brandCol .tagline {

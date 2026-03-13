@@ -33,7 +33,7 @@ export default function VrushaahiPage() {
         <div className={`container ${styles.storySplit}`}>
           <div className={styles.storyImageWrapper}>
             <Image 
-              src="/images/category-bridal.jpg" 
+              src="/images/vrushaahi-story.png" 
               alt="Vrushaahi Bride" 
               fill 
               className={styles.storyImg} 

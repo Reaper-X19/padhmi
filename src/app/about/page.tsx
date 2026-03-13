@@ -33,7 +33,7 @@ export default function AboutPage() {
           </div>
           <div className={styles.imageContent}>
             <Image 
-              src="/images/brand-story.jpg"
+              src="/images/about-artisan.png"
               alt="Artisan at work"
               width={600}
               height={800}

@@ -191,7 +191,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url('https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=1920');
+  background-image: url('/images/bridal-highlight.png');
   background-size: cover;
   background-position: center 30%;
   margin-bottom: var(--section-padding);

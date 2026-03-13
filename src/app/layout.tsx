@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, DM_Sans, Cormorant_Garamond } from 'next/font/google';
+import Script from 'next/script';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import './globals.css';
@@ -33,15 +34,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://app.snipcart.com" />
+        <link rel="preconnect" href="https://cdn.snipcart.com" />
+        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
+      </head>
       <body className={`${playfair.variable} ${dmSans.variable} ${cormorant.variable} ${dmSans.className}`}>
         <Header />
         <main>{children}</main>
         <Footer />
 
-        {/* Snipcart Setup - Hidden div for the checkout modal */}
-        <div hidden id="snipcart" data-api-key="Y2JiNTYwZjAtZmEyMi00MzY2LWI4ZDMtMTBhNzBhNmIyMWM4NjM4NDMzNDY3Nzk5ODAxMzM2"></div>
-        <script async src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js"></script>
-        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
+        {/* Snipcart Setup */}
+        <Script src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js" strategy="afterInteractive" />
+        <div 
+          hidden 
+          id="snipcart" 
+          data-api-key={process.env.NEXT_PUBLIC_SNIPCART_API_KEY || "YOUR_SNIPCART_PUBLIC_TEST_KEY"}
+          data-config-modal-style="side"
+        ></div>
       </body>
     </html>
   );

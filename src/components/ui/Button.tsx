@@ -2,13 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './Button.module.css';
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   variant?: 'primary' | 'secondary' | 'ghost' | 'bridal';
   href?: string;
-  onClick?: () => void;
-  className?: string;
-  type?: 'button' | 'submit' | 'reset';
   fullWidth?: boolean;
 }
 
@@ -16,10 +13,9 @@ export default function Button({
   children,
   variant = 'primary',
   href,
-  onClick,
   className = '',
-  type = 'button',
   fullWidth = false,
+  ...rest
 }: ButtonProps) {
   const baseClass = `${styles.btn} ${styles[variant]} ${fullWidth ? styles.fullWidth : ''} ${className}`;
 
@@ -32,7 +28,7 @@ export default function Button({
   }
 
   return (
-    <button type={type} className={baseClass} onClick={onClick}>
+    <button className={baseClass} {...rest}>
       {children}
     </button>
   );

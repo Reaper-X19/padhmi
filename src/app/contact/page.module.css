@@ -1,9 +1,9 @@
 .hero {
-  background-color: transparent;
-  padding: 100px 0 60px;
+  background: linear-gradient(135deg, rgba(214, 122, 143, 0.15) 0%, rgba(184, 134, 11, 0.1) 40%, rgba(139, 157, 131, 0.15) 100%);
+  padding: 120px 0 80px;
   text-align: center;
-  margin-bottom: 60px;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  margin-bottom: -1px;
+  border-bottom: 1px solid rgba(184, 134, 11, 0.2);
 }
 
 .title {
@@ -27,7 +27,8 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 60px;
-  padding-bottom: 100px;
+  padding: 80px 0 120px;
+  background: linear-gradient(to bottom, rgba(214, 122, 143, 0.05), transparent);
 }
 
 @media (min-width: 900px) {
@@ -35,6 +36,15 @@
     grid-template-columns: 1fr 1.5fr;
     gap: 100px;
   }
+}
+
+.formSection {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 50px;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(184, 134, 11, 0.2);
+  box-shadow: 0 24px 60px rgba(139, 157, 131, 0.15); /* Sage Silk colorful glow */
 }
 
 .contactInfo h2, .formSection h2 {
@@ -102,18 +112,20 @@
 .formGroup input,
 .formGroup select,
 .formGroup textarea {
-  padding: 14px 16px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  border: 1px solid rgba(184, 134, 11, 0.3);
   border-radius: var(--pill-radius);
   font-family: var(--font-dm-sans), sans-serif;
   font-size: 1rem;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
   outline: none;
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .formGroup input:focus,
 .formGroup select:focus,
 .formGroup textarea:focus {
   border-color: var(--color-charcoal-ink);
+  background-color: #fff;
+  box-shadow: 0 8px 24px rgba(184, 134, 11, 0.08);
 }
